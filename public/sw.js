@@ -2,7 +2,9 @@ var urlsToCache = [
   '/',
   '/add2numbers.html',
   '/add2numbers.js',
-  '/map.html'
+  '/map.html',
+  '/peta.js',
+  '/kuliner.html'
 ];
 
 self.addEventListener('install', function(event) {
@@ -31,9 +33,6 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
-
-
-
 self.addEventListener('activate', function(event) {
 
   event.waitUntil(

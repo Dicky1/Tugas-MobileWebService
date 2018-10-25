@@ -1,193 +1,224 @@
 <html>
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Firebase Hosting </title>
+    <title>Firebase Hosting </title>
     <link rel="shortcut icon" href="https://png.icons8.com/color/50/000000/firebase.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    
-<style type="text/css">
-html, body {
-    color: white;
-    font-size: 16px;disini 
-    line-height: 24px;
-    font-style: normal;
-    font-family: 'Open Sans', sans-serif;
-}
 
-.btn {
-    width: 100%;
-    background-color: #039be5;
-    border: none;
-    border-radius: 5px;
-    color: grey;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    letter-spacing: 1px;
+    <style type="text/css">
+        html,
+        body {
+            color: white;
+            font-size: 16px;
+            disini line-height: 24px;
+            font-style: normal;
+            font-family: 'Open Sans', sans-serif;
+        }
 
-    transition-property: box-shadow;
-    transition-duration: 0.2s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-.container {
- display: grid;
- width: 1080px;
- grid-template-columns: repeat(4, 1fr);
- grid-template-rows: 50px 150px 150px 150px 100px;
- grid-gap: 4px;
- 
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
+        .btn {
+            width: 100%;
+            background-color: #039be5;
+            border: none;
+            border-radius: 5px;
+            color: grey;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            letter-spacing: 1px;
 
-.menu {
-    background-color:grey;
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-.sidebar {
-    background-color:grey;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-end: 1/2; 
-}
- .konten {
-    background-color: grey;
-    grid-column: 2/5;
-}
- .footer {
-    background-color:grey;
-    grid-column-start: 1;
-    grid-column-end:  5;
+            transition-property: box-shadow;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+            transition-delay: 0s;
+        }
 
-}
+        .container {
+            display: grid;
+            width: 1080px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 50px 150px 150px 150px 100px;
+            grid-gap: 4px;
 
-@media screen and (max-width: 360px){
-    .container { width: 100%; }
-    .sidebar {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-end: 3;
-    }
-    .row {
-        display: flex;
-    }
-    .box {
-        float: left;
-        width: 80%;
-        height: auto;
-        border-radius: 5px;
-        margin: 5px;
-    }
-    .konten {
-        grid-column-start: 1;
-        grid-column-end: 5;
-    }
-    .footer {
-        margin-top: 15px;
-        grid-column-start: 1;
-        grid-column-end: 5;    
-    }
-    .icon {
-        width: 40%;
-    }
+        }
 
-}
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .menu {
+            background-color: grey;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .sidebar {
+            background-color: grey;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-end: 1/2;
+        }
+
+        .konten {
+            background-color: grey;
+            grid-column: 2/5;
+        }
+
+        .footer {
+            background-color: grey;
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+        }
+
+        @media screen and (max-width: 360px) {
+            .container {
+                width: 100%;
+            }
+
+            .sidebar {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-end: 3;
+            }
+
+            .row {
+                display: flex;
+            }
+
+            .box {
+                float: left;
+                width: 80%;
+                height: auto;
+                border-radius: 5px;
+                margin: 5px;
+            }
+
+            .konten {
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+
+            .footer {
+                margin-top: 15px;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+
+            .icon {
+                width: 40%;
+            }
+
+        }
 
 
 
-@media screen and (min-width: 460px){
-    body {
-        background-color: white;
-    }
-    h3 { font-size: 16px; }
-    .container {
-        margin: auto;
-    }
-    .sidebar {
-        grid-row-start: 2;
-        grid-row-end: 5;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .konten {
-        grid-column: 2/5;
-    }
+        @media screen and (min-width: 460px) {
+            body {
+                background-color: white;
+            }
 
-    .box {
-        float: left;
-        width: 100%;
-        height: auto;
-        border-radius: 5%;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-    .icon {
-        height:  120%;
-    }
-    .btn {
-        text-align: center;
-        width: 50%;
-    }
-}
- 
+            h3 {
+                font-size: 16px;
+            }
+
+            .container {
+                margin: auto;
+            }
+
+            .sidebar {
+                grid-row-start: 2;
+                grid-row-end: 5;
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+
+            .konten {
+                grid-column: 2/5;
+            }
+
+            .box {
+                float: left;
+                width: 100%;
+                height: auto;
+                border-radius: 5%;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+
+            .icon {
+                height: 120%;
+            }
+
+            .btn {
+                text-align: center;
+                width: 50%;
+            }
+        }
     </style>
 </head>
+
 <body>
-<div class="container">
-    <div class="card menu">
-        <img class="icon" src="logo-standard.png">
-    </div>
-    <div class="card sidebar">
-        <div class="row">
-            <div class="box">
-                <img class="box" align="center" src="dickydiko.jpg">
-            </div>
-            <div class="box">
-                Dicky Setiono<br>
+    <div class="container">
+        <div class="card menu">
+            <img class="icon" src="logo-standard.png">
+        </div>
+        <div class="card sidebar">
+            <div class="row">
+                <div class="box">
+                    <img class="box" align="center" src="dickydiko.jpg">
+                </div>
+                <div class="box">
+                    Dicky Setiono<br>
+                </div>
             </div>
         </div>
+        <div class="card konten">
+            <h3>Halaman Penjumlahan Dua Angka.</h3>
+            <a href="add2numbers.html">
+                <button class="btn"><strong>PENJUMLAHAN</strong></button>
+            </a>
+        </div>
+        <div class="card konten">
+            <h3>Halaman Lokasi Istimewa Mapbox Leaflet</h3>
+            <a href="map.html">
+                <button class="btn"><strong>MAPBOX</strong></button>
+            </a>
+        </div>
+        <div class="card konten">
+            <h3>kuliner</h3>
+            <a href="kuliner.html">
+                <button class="btn"><strong>KULINER</strong></button>
+            </a>
+        </div>
+        <div class="card footer">
+            <p align="center"><strong><a href="https://github.com/Dicky1">Dicky Setiono</a> </strong></p>
+        </div>
     </div>
-    <div class="card konten">
-        <h3>Halaman Penjumlahan Dua Angka.</h3>
-        <a href="add2numbers.html">
-            <button class="btn"><strong>PENJUMLAHAN</strong></button>
-        </a>
-    </div>
-    <div class="card konten">
-        <h3>Halaman Lokasi Istimewa Mapbox Leaflet</h3>
-        <a href="map.html">
-            <button class="btn"><strong>MAPBOX</strong></button>
-        </a>
-    </div>
-    <div class="card konten">Konten 3</div>
-    <div class="card footer">
-        <p align ="center"><strong><a href ="https://github.com/Dicky1">Dicky Setiono</a> </strong></p>
-    </div>
-</div>
-<script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
-          // Registration was successful
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }).catch(function(err) {
-          // registration failed :(
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      });
-    }
-</script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }).catch(function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+    <script src="readnote.js">
+    </script>
 </body>
+
 </html>
