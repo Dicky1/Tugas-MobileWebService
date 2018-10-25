@@ -1,4 +1,3 @@
-//var URL="assets/catatan.txt";
 var URL="catatan.json";
 	fetch(URL).then(function(response)
 	{
