@@ -23,6 +23,21 @@ var URL="catatan.json";
 	.catch(function(err){
 		console.log(err)
 	})
+// promt untuk pemasangan home to screen
+window.addEventListener('beforeinstallprompt', function(e) {
+	e.userChoice.then(function(choiceResult) {
+  
+	  console.log(choiceResult.outcome);
+  
+	  //check apkaah user menambahkan ke home atau tidak
+	  if(choiceResult.outcome == 'dismissed') {
+		console.log('User cancelled home screen install');
+	  }
+	  else {
+		console.log('User added to home screen');
+	  }
+	});
+  });
 
 
 //program sederhana menggunakan notasi =>
